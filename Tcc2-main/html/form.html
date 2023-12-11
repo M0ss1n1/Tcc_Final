@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="../css/form.css">
+  <!-- <link rel="stylesheet" href="../css/resp.css"> -->
+</head>
+
+<body>
+  <img src="../img/logo.png" alt="Your Logo" class="logo">
+  <nav class="nav-links">
+    <li class="center"><a href="sobre.html">Sobre</a></li>
+    <li class="upward"><a href="index.html">Home</a></li>
+    <li class="forward"><a href="contato.html">Contato</a></li>
+  </nav>
+  
+  <div class="container">
+    <h1 id="success-message" class="hidden">Tema gerado com sucesso!</h1>
+    <div id="form-container">
+      <h1>Perguntas para ajudar você a encontrar um tema para o seu TCC</h1>
+      <form id="tcc-form">
+        <p>
+          <label for="area">Tipo de TCC</label>
+          <select id="area" name="area" required>
+            <option value="">Selecione uma opção</option>
+            <option value="1">Tcc para curso tecnico profissionalizante</option>
+            <option value="2">Tcc para ensino superior(Faculdade)</option>
+          </select>
+
+          <div class="perguntas-container">
+            <p>
+              <label for="pergunta1"> Quais matérias/disciplinas mais gostou no curso?:</label>
+              <input type="text"  id="materias" name="materias" required></input>
+
+              <label for="pergunta2">Existe algum assunto em destaque na área do seu curso?
+                <br>(por exemplo inteligencia artificial):</label>
+              <input type="text" id="assunto" name="assunto" required></input>
+
+              <label for="pergunta3">Há alguma pesquisa recente que tenha chamado a atenção e que possa ser uma fonte de inspiração para um TCC?:</label>
+              <input type="text" id="pesquisaRecente" name="pesquisaRecente" required></input>
+
+              <label for="pergunta4">Você prefere uma abordagem teórica ou prática</label>
+              <input type="text" id="teoPra" name="teoPra" required></input>
+
+              <label for="pergunta5">Como o trabalho poderia contribuir para a sociedade ou área?</label>
+              <input type="text" id="trabalhoSociedade" name="trabalhoSociedade" required></input>     
+              
+            </p>
+          </div>
+        </div>
+        <div class="resposta" id="resposta">
+          <div id="loading-message" class="hidden">Gerando o tema, por favor, aguarde...</div>
+          <button id="generate">Enviar</button>
+          <p id="output" class="hidden"></p>
+          <button id="back" class="hidden">Voltar</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="waveWrapper waveAnimation">
+      <div class="waveWrapperInner bgTop">
+        <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+      </div>
+    </div>
+
+    <!-- <script>
+      document.getElementById("tcc-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do formulário (recarregar a página)
+        
+        // Coloque o código de envio da API ou outra lógica aqui
+        
+        // Exemplo de como redirecionar para a página "resp.html" após o envio
+        window.location.href = "resp.html";
+      });
+    </script> -->
+
+    <script defer src="../js/formulario.js"></script>
+  </body>
+  </html>

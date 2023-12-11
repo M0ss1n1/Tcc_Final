@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="../css/contato.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav-links">
+        <li class="center"><a href="sobre.html">Sobre</a></li>
+        <li class="upward"><a href="index.html">Home</a></li>
+        <li class="forward"><a href="contato.html">Contato</a></li>
+    </nav>
+  </header>
+  
+  <section class="container">
+    <h1>Entre em Contato Conosco</h1>
+    <p>Estamos ansiosos para ouvir de você. Preencha o formulário abaixo para entrar em contato.</p>
+    
+    <form>
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" style="resize: none;" required></textarea>
+      </div>
+      
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+      </div>
+  </section>
+
+  <script src="../js/contato.js"></script>
+
+</body>
+</html>
